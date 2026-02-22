@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | TechZone Computers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">TechZone<span style="color: #fff;">.</span></a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-icons">
+                <a href="cart.html" class="active">
+                    <i class="fas fa-shopping-cart" style="color: var(--accent-color);"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Section -->
+    <section>
+        <div class="container">
+            <h1 class="section-title">Your Cart</h1>
+
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items-container">
+                    <!-- Items Rendered via JS -->
+                </tbody>
+            </table>
+
+            <div class="cart-summary">
+                <h3>Cart Total: <span id="cart-total" class="cart-total">Rs. 0</span></h3>
+                <button class="btn" style="width: 100%;" onclick="alert('Checkout functionality coming soon!')">Proceed
+                    to Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>TechZone.</h3>
+                <p>Your one-stop destination for premium computers and tech accessories.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul style="line-height: 2;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get the latest updates and offers.</p>
+                <form onsubmit="event.preventDefault(); alert('Subscribed!');">
+                    <input type="email" placeholder="Enter your email"
+                        style="width: 100%; padding: 10px; margin-bottom: 10px; border: none; border-radius: 5px; background: #2b3642; color: #fff;">
+                    <button type="submit" class="btn"
+                        style="width: 100%; border: none; cursor: pointer;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom" style="border-top: 1px solid rgba(255,255,255,0.1); background: #050608;">
+            <p>&copy; 2026 TechZone Computers. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

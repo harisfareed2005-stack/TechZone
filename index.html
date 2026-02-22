@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone Computers | Premium Tech Store</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">TechZone<span style="color: #fff;">.</span></a>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-icons">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Next Gen Performance</h1>
+            <p>Upgrade your setup with the latest laptops, high-performance desktops, and premium accessories.</p>
+            <a href="products.html" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div id="featured-products-container" class="product-grid">
+                <!-- Products rendered via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="special-offer" style="background-color: var(--surface-color);">
+        <div class="container" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+            <div style="flex: 1; min-width: 300px; padding-right: 2rem;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Gaming Week Sale</h2>
+                <p style="margin-bottom: 2rem;">Get up to 30% off on selected gaming laptops and peripherals. Limited time only!</p>
+                <a href="products.html" class="btn">View Offers</a>
+            </div>
+            <div style="flex: 1; min-width: 300px;">
+                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Gaming Setup" style="border-radius: 10px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="reviews">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div style="background: var(--surface-color); padding: 2rem; border-radius: 10px;">
+                    <div style="color: var(--accent-color); margin-bottom: 1rem;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Amazing build quality and super fast shipping. My new gaming rig is a beast!"</p>
+                    <h4 style="margin-top: 1rem; color: var(--accent-color);">- Alex J.</h4>
+                </div>
+                <div style="background: var(--surface-color); padding: 2rem; border-radius: 10px;">
+                    <div style="color: var(--accent-color); margin-bottom: 1rem;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"Great customer service. They helped me choose the right laptop for my design work."</p>
+                    <h4 style="margin-top: 1rem; color: var(--accent-color);">- Sarah M.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>TechZone.</h3>
+                <p>Your one-stop destination for premium computers and tech accessories.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul style="line-height: 2;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get the latest updates and offers.</p>
+                <form onsubmit="event.preventDefault(); alert('Subscribed!');">
+                    <input type="email" placeholder="Enter your email" style="width: 100%; padding: 10px; margin-bottom: 10px; border: none; border-radius: 5px; background: #2b3642; color: #fff;">
+                    <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom" style="border-top: 1px solid rgba(255,255,255,0.1); background: #050608;">
+            <p>&copy; 2026 TechZone Computers. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
